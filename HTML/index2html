@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <h1>Portfolio</h1>
+            <div>
+            <div>
+  <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" height="400">
+            </div>
+<div>
+ <b> SUMIT KUMAR SINGH</b>   
+  <h2> Qualification</h2>
+   <pre>  Dedicated and motivated 2nd-year Information Technology student with a
+    passion for programming and web development. Seeking an internship or
+    entry-level position to apply and enhance skills in C, C++, Data Structures and
+    Algorithms, Python, and front-end web design.</pre>
+    <h2>Technical skills</h2>
+    <pre>  Programming Languages: C, C++, Basic Python
+        ● Data Structures and Algorithms: Basics
+        ● Web Technologies: Front-end design in css, html
+        ● Problem-solving: Solved over 40 questions on LeetCode</pre>
+</div>
+    </div>
+</body>
+</html>

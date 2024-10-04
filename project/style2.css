@@ -1,0 +1,15 @@
+*{
+    background-color: red;
+}
+
+div{
+    background-color : green;
+    width 100px;
+    height: 100px;;
+    width:200px;
+
+}
+#div3{ background-color: yellow;
+   position: relative;
+     top:20px;
+}

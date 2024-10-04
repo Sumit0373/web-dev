@@ -1,0 +1,15 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#divid{
+   height: 100px;
+    width: 100%;
+    background-color: yellow;
+}
+.divclass{
+    height: 100px;
+    width: 100%;
+    background-color: pink;
+}

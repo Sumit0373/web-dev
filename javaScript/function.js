@@ -1,3 +1,4 @@
+alert("Hello world");
 function myFunction(){
     console.log("This is a funciton call ");
     console.log("this is funciton");

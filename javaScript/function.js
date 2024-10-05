@@ -53,4 +53,4 @@ function returnVowel(a){
     }
     return count;
 }
-console.log(countVowel("stioabc"));
+console.log(countVowel("stoabc"));

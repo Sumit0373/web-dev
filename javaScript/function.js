@@ -1,4 +1,5 @@
 alert("Hello world");
+
 function myFunction(){
     console.log("This is a funciton call ");
     console.log("this is funciton");
@@ -54,3 +55,48 @@ function returnVowel(a){
     return count;
 }
 console.log(countVowel("stoabc"));
+
+//for each loop
+let arr = ["pune","goa","delhi"];
+arr.forEach((element ,index)=> {
+    console.log(element , index);
+});
+//for each not used for string ;
+
+// for given array return the square of each value using for each loop
+
+let num =[10,3,5,8,3];
+
+num.forEach(element => {
+    console.log(element*element);
+});
+
+//filter in javascript
+let mark = [ 87,93,64,99,86]
+// filter out mark greater than 90
+let newMark = mark.filter((val)=>{
+     return val>90;
+});
+console.log(` the mark is greater than 90 is ${newMark}`);
+
+
+// TAKE A NUMBER FROM THE USER AND CREATER A ARRAY FROM 1 TO N ;
+let inputArray =[];
+let input = prompt("Enter a number");
+
+for(let i=1 ; i<=input ; i++){
+  inputArray.push(i);
+}
+console.log(inputArray);
+ // use reduce method to find the sum of array and product
+ //sum
+  let output = inputArray.reduce ((result,current)=>{
+     return result+current;
+  });
+  console.log(output);
+
+  //product
+  let output2= inputArray.reduce ((result,current)=>{
+    return result*current;
+ });
+ console.log(output2);

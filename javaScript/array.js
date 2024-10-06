@@ -20,6 +20,8 @@ for(let i=0 ; i<name.length ; i++){
  for(let i of mark){
       sum+=i;
  }
+ mark.push(100);
+ console.log(`100 add in mark=>${mark[mark.length-1]}`);
  console.log(` The average marks of the class is = > ${sum/mark.length}`);
 
  let price=[250,645,300,900,50];

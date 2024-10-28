@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Event in the JavaScript</h1>
+    <!-- Inline event-->
+    <button onclick="console.log('click was done')">Click me!</button> <!-- when click done-->
+    <br>
+    <!-- it activate on double click-->
+   <button ondblclick="console.log('double click done')">click me two time</button>
+    <div onmouseover="console.log('you are inside div')"> </div> <!--when you bring your mouse inside div it activate-->
+   
+   
+   <br><br><br><br><br>  <!--External js has high priority than inline js -->
+   
+   <!-- handing  js by outside -->
+    <button id="btn1"> btn1</button>   <br><br> 
+
+   <button id="btn2"> btn2</button>
+   
+   <br><br><br>
+
+   <!--Event listener-->
+   <button id="btn3">btn3</button>
+
+   <!--Practice question-->
+   <button id="mode">Change mode</button>
+   
+    <script src="script.js"></script>
+</body>
+</html>

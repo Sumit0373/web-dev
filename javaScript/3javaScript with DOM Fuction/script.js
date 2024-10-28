@@ -35,8 +35,8 @@ let ap= document.querySelector("h2");
  console.dir(divs);   
  
  // by using array to print div
- for(div of divs){
-    console.log(div);
+ for(divs of divs){
+    console.log(divs);
  }
  console.log("try to change the content in div");
  //or we can change the value of div here by 
@@ -57,7 +57,7 @@ console.log(attri.getAttribute("class")); //this give adiv attribute of the clas
 // set attrinbute is use to set the value of  the any attriute 
 // if you want to change the vlaue of div  adiv to new_div you can do by this way
 
-attri.setAttribute("class","newDiv"); // it can change the adiv to newDiv;
+attri.setAttribute("class","newDiv"); //it can change the adiv to newDiv;
 
 // style in js we can access and change the value of style
  let newD = document.querySelector(".box");

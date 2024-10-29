@@ -58,6 +58,8 @@ console.log(countVowel("stoabc"));
 
 //for each loop
 let arr = ["pune","goa","delhi"];
+
+//(this return the element , this return the index) if we write only one field (elem) it can return index 
 arr.forEach((element ,index)=> {
     console.log(element , index);
 });
@@ -71,8 +73,9 @@ num.forEach(element => {
     console.log(element*element);
 });
 
+
 //filter in javascript
-let mark = [ 87,93,64,99,86]
+let mark = [ 87,93,64,99,86,110];
 // filter out mark greater than 90
 let newMark = mark.filter((val)=>{
      return val>90;
@@ -91,6 +94,7 @@ console.log(inputArray);
  // use reduce method to find the sum of array and product
  //sum
   let output = inputArray.reduce ((result,current)=>{
+    console.log(`the sum is ${result}`);
      return result+current;
   });
   console.log(output);

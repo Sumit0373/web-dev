@@ -35,8 +35,8 @@ let ap= document.querySelector("h2");
  console.dir(divs);   
  
  // by using array to print div
- for(divs of divs){
-    console.log(divs);
+ for(let div of divs){
+    console.log(div);
  }
  console.log("try to change the content in div");
  //or we can change the value of div here by 

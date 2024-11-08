@@ -63,7 +63,7 @@ setTimeout(()=>{
 // callback Hell 
 
 /* callback Hell : Nested callbacks stacked below one another forming a pyramid structure.
-this style of programming becomes difficut to understand & manage. */
+this style of programming becomes difficult to understand & manage. */
 
 // write a function which take data and return the data after delay
 function getData1(dataid){
@@ -72,7 +72,7 @@ function getData1(dataid){
   }, 3000);
 }
 
-//if you want to print and find 3 data  , data 1 and data 2 and data 3 after 6 sec delay how you can do that.
+//if you want to print and find 3 data  , data 1 and data 2 and data 3 after 3 sec delay how you can do that.
 
 // first you can do like that 
 

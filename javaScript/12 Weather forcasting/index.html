@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav">
+   <div class="firstNav">
+    <div class="navIcon">
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
+    </div>
+    <div class="logo">
+        <p id="skyScope1">Sky-Scope</p><p id="skyScope2"> A Weather Website </p>
+    </div>
+   </div>
+   <div class="secondNav">
+    <a href="index.html">Home</a>
+    <a href="Airquality.html">Air Quality</a>
+    <a href="#">Account</a>
+    <a href="#">Contact US </a>
+   </div>
+
+   <div class="search"> 
+    <form action="Weatherdata.html"  method="get">
+        <input type="search" id="search" name="search" placeholder="Search place...">
+        <button type="submit">Search</button> 
+      </form>
+      
+   </div>
+</div>
+
+
+
+<div class="heroImg">
+    <div class="heroLogo">
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" height="180rem">
+        <h2>Sky-Scope</h2>
+        <h3>A Weather Website</h3>
+    </div>
+    <div class="heroCon">
+        <pre>SkyScope brings you accurate weather forecasts and air quality information at your fingertips.
+            No sign-up needed just easy access to the data that matters most. </pre>
+    </div>
+    <div class="searchHistory"> 
+        <button class="firstSearch">
+          <h1>Delhi</h1>
+            <div>
+                <img src="history1.png" alt="icone" height="70rem">
+                <p>Temperatue...</p>
+            </div>
+
+        </button>
+        <button class="secondSearch">
+            <h1>Mumbai</h1>
+            <div>
+                <img src="history1.png" alt="icone" height="70rem">
+                <p>Temperatue...</p>
+            </div>
+        </button>
+        <button class="thirdSearch">
+            <h1>Lucknow</h1>
+                <div>
+                    <img src="history1.png" alt="icone" height="70rem">
+                    <p>Temperatue...</p>
+                </div>
+        </button>
+    
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

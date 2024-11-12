@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Weatherdata.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="firstNav">
+         <div class="navIcon">
+             <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
+         </div>
+         <div class="logo">
+             <p id="skyScope1">Sky-Scope</p><p id="skyScope2"> A Weather Website </p>
+         </div>
+        </div>
+        <div class="secondNav">
+         <a href="index.html">Home</a>
+         <a href="Airquality.html">Air Quality</a>
+         <a href="#">Account</a>
+         <a href="#">Contact US </a>
+        </div>
+     
+        <div class="search"> 
+            <a href="index.html"><button>Click Here To Search Next City</button></a>
+        </div>
+     </div>
+   
+<div class="heroImg">
+<div class="weather">
+    <h1>Current Weather Report</h1>
+    <h3 id="cityName">Delhi</h3>
+    
+    <div class="currentWether">
+        <img src="sun.png" alt="icon" height="150">
+        <div class="temp"> Temperature...</div>
+    </div>
+
+    <div class="tableInfo">
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Parameter</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Temperature</td>
+                <td class="tempData">NA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Humidity</td>
+                <td class="tempData">NA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Wind Speed</td>
+                <td class="tempData">NA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Latitude</td>
+                <td class="tempData">NA</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Longitude</td>
+                <td class="tempData">NA</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+ 
+<script src="Weatherdata.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #212529;
+}
+.nav1{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.firstNav1{
+    display: flex;
+    align-items: center;
+}
+.logo1{
+    text-align: center;
+}
+#skyScope1{
+    color: rgb(233, 226, 226);
+    font: bold;
+    font-size: 1.8rem ;
+}
+#skyScope2{
+    color: rgb(233, 226, 226);;
+    font-size: small;
+}
+.secondNav1 a{
+    text-decoration: none;
+    margin-left: 2.5rem;
+    color: #ffffffA6;
+    font-size: larger;
+    font: bold;
+    font-weight: 100;
+}
+
+.hero{
+    width: 100%;
+    height: 30rem;
+    background-image: url("customer.jpg");
+    background-size: cover;
+}
+.herocontent{
+   width: 100%;
+   height: 30rem;
+ text-align: center;
+   
+}
+
+.herocontent h1{
+    color: white;
+    font-size:3rem;
+    padding-top:8rem;
+}
+.searchClass{
+width: 100%;
+height: 3rem; 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.fa-solid{
+    width: 2.5%;
+height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.searchClass form{
+    width: 28%;
+    display: flex;
+    
+}
+.searchClass input{
+    width:100%;  
+    height: 2.2rem;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    overflow: scroll;
+}
+.searchClass input::placeholder{
+   font-size: 1.5rem;
+}
+.searchClass button{
+    background-color: rgb(189, 189, 165);
+    border: none;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    font: 2.5rem;
+}
+.searchClass button:hover{
+   cursor: pointer;
+}
+
+
+.accordion {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: scroll;
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid #070404;
+  }
+
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+
+  .accordion-header {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion-header:hover {
+    background-color: #969a98;
+  }
+
+  .accordion-content {
+    display:none;
+    padding: 15px;
+    background-color: #ddb2b2;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+.accordion-content.active {   /*   .accordion-content.active it can target only .active in accorion-content or .active also work with any .active class form the css */
+    display: block;
+  }

@@ -64,20 +64,30 @@ let search = document.querySelector(".search input");
  })()
 
 async function news (){
-   for(let i=1 ; i<=8 ; i++){
+    let error = document.querySelectorAll(".card");
+  let url =`https://newsapi.org/v2/everything?q=weather&language=en&apiKey=efaddb22b2104a91888cc66348868482`;
+  let responce= await fetch(url);
+  let result =await responce.json();
+  console.log(result.articles[7].description);
+  console.log(result.articles[1].author);
+  console.log(result.articles[1].author);
+   for(let i=1 ; i<=8; i++){
+//if data were removed loop run this if statement
+  if(result.articles[i].title==="[Removed]"){
+   error[i-1].querySelector("img").src=result.articles[i+13].urlToImage;
+    error[i-1].querySelector(`.card-title${i}`).innerText=result.articles[i+13].source.name;
+    error[i-1].querySelector(`.card-text${i}`).innerText=result.articles[i+13].title;
+   error[i-1].querySelector(`.card-button${i}`).href=result.articles[i+13].url;
+ }
+ else{
+  document.querySelector(`.card${i} img`).src=result.articles[i].urlToImage;
+  document.querySelector(`.card-title${i}`).innerText=result.articles[i].source.name;
+  document.querySelector(`.card-text${i}`).innerText=result.articles[i].title;
+  document.querySelector(`.card-button${i}`).href=result.articles[i].url;
+ } 
 
-    let url =`https://newsapi.org/v2/everything?q=weather&language=en&apiKey=efaddb22b2104a91888cc66348868482`;
-    let responce= await fetch(url);
-    let result =await responce.json();
-  
-
-
-    document.querySelector(`.card${i} img`).src=result.articles[i].urlToImage;
-    document.querySelector(`.card-title${i}`).innerText=result.articles[i].source.name;
-    document.querySelector(`.card-text${i}`).innerText=result.articles[i].title;
-    document.querySelector(`.card-button${i}`).href=result.articles[i].url;
   }
 
 }
-
+ 
 

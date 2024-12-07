@@ -1,0 +1,8 @@
+this is a new branch name newBranchs 
+ 
+ all the change happen in the newBranchs
+
+ COMMANDS => git branch  , show all branches 
+        git checkout branchName  , it will use to move from one branch to another branch
+        git checkout -b branchName , it will use to create a new branch 
+        git branch  -d branchName , it will use to delete the branch name 

@@ -6,3 +6,12 @@ this is a new branch name newBranchs
         git checkout branchName  , it will use to move from one branch to another branch
         git checkout -b branchName , it will use to create a new branch 
         git branch  -d branchName , it will use to delete the branch name 
+
+
+        mearge command by git
+        git diff branch name => give the file 
+
+        git merge branch name => merge two branch
+
+        merge command by git hub
+        CREATE PULL REQUEST CLICK THIS OPTION

@@ -15,3 +15,32 @@ this is a new branch name newBranchs
 
         merge command by git hub
         CREATE PULL REQUEST CLICK THIS OPTION
+
+
+ fixing Mistake 
+                         
+ case 1: stage change  => reverse the add effect 
+       git reset filename;
+       
+
+case 2 : commieted cahnges (for one commit)
+       git reset HEAD~1  it will reverse the last commited change 
+
+cas 3 : commited change (for many commits)
+   if we type git log it will give all commited hash code which come 
+   you want to delete you will delete ..........
+
+       git reset <-commited hash->
+
+       and if you want to remove the infomation from the file you can 
+       use this git reset --hard <-commit hash ->
+
+
+
+       fork is use in git hub
+       which is use to copy someone other repo into you repo and made 
+       change and do a pull request to original repo 
+
+       is know as open contribution 
+        
+       

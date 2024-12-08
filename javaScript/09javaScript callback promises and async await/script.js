@@ -210,3 +210,16 @@ checkSuccess.catch((err)=>{
 
 
      
+
+/* In short, a Promise is used in JavaScript to handle asynchronous operations more effectively. It allows you to write cleaner, more readable code when dealing with tasks like fetching data from a server, reading files, or making API calls—tasks that might take some time to complete.
+
+A Promise is essentially a placeholder for a value that is not available yet but will be at some point in the future. It has three states:
+
+Pending: The operation is still in progress.
+Fulfilled: The operation completed successfully, and the value is available.
+Rejected: The operation failed, and an error occurred.
+The main benefits of using a Promise are:
+
+Avoiding callback hell: Promises allow chaining .then() and .catch() methods, making asynchronous code easier to read and maintain.
+Error handling: Promises provide a structured way to handle errors with .catch().
+Composability: Promises can be combined with other Promises, allowing multiple asynchronous operations to be handled in sequence or in parallel. */ 

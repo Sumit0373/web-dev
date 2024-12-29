@@ -1,0 +1,13 @@
+require Vs import
+
+In code if you use require so in whole code you have to use require and if you use import in 
+whole code you have to use import 
+
+
+
+import { sum } from "./math.js"
+
+We can't selectively load only the pieces we need with require but in import, we can selectively load only
+the pieces we need, which can save memory.
+
+Loading is synchronous for 'require' but can be asynchronous for 'import'.

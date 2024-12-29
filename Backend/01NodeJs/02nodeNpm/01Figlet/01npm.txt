@@ -1,0 +1,42 @@
+ 
+ 
+ Now we talk about NPM( node package manager ) 
+
+ this is a package manager of the node.js 
+  work => 1: Contain libarary of packages ... 
+          2: Command Line tool ...
+
+
+
+       Installing Package 
+       npm install <-Package name->  
+
+      1: we can go npm website and download any package as we want 
+
+      2: here we go npm websit and download and figlet package it is use to print the differet
+       pattern on command prompt
+
+       3: we create a figlet direactory and in the figlet direactory we install figlet package by
+           npm install figlet
+       
+       4 : normally 1 folder and 2 file were download in the figlet folder
+          folder name => node_modules
+           file name => 1:package-lock.json
+                        2:package.json
+
+       5:   node_modules  => the node modules folder contains every installed dependency for your project 
+               matlab => project jis bhi file or folder pe depend hota hai vo node_modules me install ho jate hai
+
+       6: package-lock.json  => It records the exact version of every installed dependency,including its 
+                                 sub-dependencies and their versions
+        sub-dependencies matlab => jo package install kiye hai vod bhi kisi pe depend ho 
+
+        7:     package.json => the package.json file contains descriprive and funtional meta data about
+                                the project such as a name version version and dependencies..
+
+        8: To run this figlet inside figlet direactory we create an index.js and use require to fetch the info
+                      const figlet = require("figlet");
+
+        package.json is is very important file in this it contains all infomation about the projet 
+        if node_modules is deleted we can easly get node module by (npm install) command so this is 
+        very important . It contain  all infomation about project.

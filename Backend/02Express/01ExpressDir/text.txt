@@ -1,0 +1,10 @@
+first we initilize(or create a json file by npm init) the json by npm init .
+and give author name Sumit Kumar Singh
+
+and go to npm website and install express 
+(npm install express) install npm
+
+than package json will we updated afer install
+
+than you create a index.js file which is use for server side programming
+and you go to npm website and you will find document how to use express

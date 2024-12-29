@@ -1,0 +1,21 @@
+
+
+In the above section we learn how we can install the npm package at local level
+ we can not acess the figlet package out the the figlet direactiory 
+ if we try to run index.js file outside the figlet it show error
+
+ here we learn how we can install the npm package at global 
+ but this is not a good practice 
+
+ you can install at global level use this command
+
+
+
+sudo chown -R $USER /usr/local/lib/node_modules
+ npm install -g<-package name->    we add -g for global
+ npm link<-package name ->
+
+
+ we can install at golbal level  go developar mode and enable the developare mode and sudo to install
+ i was not enable this today
+

@@ -1,0 +1,27 @@
+ 
+ 
+ package.json is is very important file in this it contains all infomation about the projet 
+        if node_modules is deleted we can easly get node module by (npm install) command so this is 
+        very important . It contain  all infomation about project.
+
+
+here in my project section we learn how we can create own jason file 
+
+   by this command we can create json file => (npm init)
+
+   when you run npm init this is come
+   
+{
+  "name": "myproject",                      => give same name 
+  "version": "1.0.0",                       => give same version
+  "description": "Creating the json file",  => give description creating the json file
+  "version": "1.0.0",
+  "description": "Creating the json file",
+  "description": "Creating the json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sumit Kumar Singh",
+  "license": "ISC"
+}

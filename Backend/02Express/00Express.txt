@@ -1,0 +1,33 @@
+First know about 
+
+* Library v/s Framework
+
+Library:
+A library is a collection of pre-written code that
+can be used to perform specific tasks.
+eg - axios
+
+
+Framework
+A framework is a set of pre-written code that provides a
+structure for developing software applications.
+eg - express
+
+
+                                   * EXPRESS (Node.js Framework)
+
+* Express:
+A Node.js web application framework that helps us to make web applications
+It is used for server side programming.
+
+
+* There are four major work of express 
+
+1: Listen for incoming request
+2: Parse (converting text request to object)
+3: Match responce with routes 
+(routes means exrat info google.com/account => afer slash account is rout)
+4: To sent responce 
+
+
+* Express exist in npm package so we can install for npm package 

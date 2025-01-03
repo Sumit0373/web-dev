@@ -1,0 +1,10 @@
+here we have a data coming form the data base in the form of json
+
+and we pass this data to ejs file and sent to the browser
+
+we have the data in json file so we work on that file name data.json
+
+Instagram page with EJS
+const instaData = require("./data.json");
+
+than we will learn about the includes

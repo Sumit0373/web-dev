@@ -1,0 +1,16 @@
+=>                                 Interpolation Syntax
+
+          Interpolation refers to embedding expressions into marked up text.
+
+(In this we can make changes during the run time of the html file) or we make ejs as dynamic
+
+Go to the ejs.co website  and see the tag so we can make html dyanmic
+
+go to the ejs file
+<%= %> (This tag can be use to give the output of the express in the string form);
+<%= 2+2 %> this can give output as 4....
+
+
+we can find all the tag for ejs.co website ..
+
+after this we will learn how to handle data come database

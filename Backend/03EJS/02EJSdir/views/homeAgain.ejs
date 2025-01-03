@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rolldiceAgain</title>
+</head>
+<body>
+    <!-- < % %>  this syntax is use to print the conditional statement during the run time 
+     
+    Conditional Statements in EJS
+     Adding conditions inside EJS
+    
+     < % if(diceVal 6) { % >
+    <h2>Nice! Roll dice again.
+    </h2> < % } % >
+    -->
+
+   <h1> Number on the dice is : <%= data %></h1>
+
+    <!-- This can be use as a conditional statement -->
+     <% if(data==6) { %>
+        <h1> Nice , Roll dice again </h1>
+        <%  } %>
+        
+
+        <!--Here we will learn how implement the loop-->
+        <h1>Account that follow you</h1>
+        <ul>
+            <% for(user of followers) {%>
+                <li><%= user %></li>
+                <% } %>
+        </ul>
+</body>
+</html>

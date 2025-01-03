@@ -1,0 +1,34 @@
+Use for Templating
+
+EJS (Embedded JavaScript templates)
+EJS is a simple templating language that lets you generate HTML markup with plain JavaScript.
+(It mainly use to generate the html code at run time )
+
+how to use 
+
+initilize the package json 
+npm init -y
+than install npm express
+than install npm ejs 
+than create index.js file 
+
+How to use EJs 
+
+Using EJS
+
+app.set is a function which set the view engin to ejs;
+In index.js we require express but not ejs because ejs contained by express
+view means => the templates file or engin
+
+app.set("view engine", "ejs");
+
+
+
+by the help of ejs we render the file (we send the ejs file to the browser)
+to create a templates we have to create a view folder inside view folder we
+create a multiple file ejs flie which contained html or js code 
+and express always search view folder if you render ejs file 
+
+app.get("/",(req, res) => {
+res. render("home.ejs");
+});

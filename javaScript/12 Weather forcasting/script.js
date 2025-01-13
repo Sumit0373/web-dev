@@ -74,16 +74,16 @@ async function news (){
    for(let i=1 ; i<=8; i++){
 //if data were removed loop run this if statement
   if(result.articles[i].title==="[Removed]"){
-   error[i-1].querySelector("img").src=result.articles[i+13].urlToImage;
-    error[i-1].querySelector(`.card-title${i}`).innerText=result.articles[i+13].source.name;
-    error[i-1].querySelector(`.card-text${i}`).innerText=result.articles[i+13].title;
-   error[i-1].querySelector(`.card-button${i}`).href=result.articles[i+13].url;
+   error[i-1].querySelector("img").src=result.articles[i+27].urlToImage;
+    error[i-1].querySelector(`.card-title${i}`).innerText=result.articles[i+27].source.name;
+    error[i-1].querySelector(`.card-text${i}`).innerText=result.articles[i+27].title;
+   error[i-1].querySelector(`.card-button${i}`).href=result.articles[i+27].url;
  }
- else{
-  document.querySelector(`.card${i} img`).src=result.articles[i].urlToImage;
-  document.querySelector(`.card-title${i}`).innerText=result.articles[i].source.name;
-  document.querySelector(`.card-text${i}`).innerText=result.articles[i].title;
-  document.querySelector(`.card-button${i}`).href=result.articles[i].url;
+ else{                             // here i am adding 11 because some news not work form 1 to 8
+  document.querySelector(`.card${i} img`).src=result.articles[i+11].urlToImage;
+  document.querySelector(`.card-title${i}`).innerText=result.articles[i+11].source.name;
+  document.querySelector(`.card-text${i}`).innerText=result.articles[i+11].title;
+  document.querySelector(`.card-button${i}`).href=result.articles[i+11].url;
  } 
 
   }

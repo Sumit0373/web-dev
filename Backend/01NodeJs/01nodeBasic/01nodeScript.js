@@ -15,9 +15,9 @@ for(let i=0 ; i<5 ; i++){
 }
 
 
-//process => this object give info about current node.js process
+//console.log(process) => this object give info about current node.js process
 
-//process.argv => this return an array containing the command line argument passed when the node.js was launched
+//console.log(process.argv) => this return an array containing the command line argument passed when the node.js was launched
 // we can pass agrv from git bash
 
 
@@ -41,17 +41,16 @@ console.log();
 // here we use (require) to catch the export coming from another file..
 console.log("Module & Require");
 
-const mathFun  = require("./maths");
+const mathFun  = require("./02maths");
 console.log(mathFun);
 console.log(mathFun.sum(2,2));
 console.log(mathFun.mul(2,5));
-
-
+console.log(mathFun.pi);
 
 
 console.log();
 console.log();
-console.log("Importing multiple flile form different folder");
+console.log("Importing multiple file form different folder");
 //Here we importing all file form the fruit folder
 const multipleFile = require("./Fruit");
 console.log(multipleFile);

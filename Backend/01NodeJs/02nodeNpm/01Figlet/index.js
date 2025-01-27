@@ -1,4 +1,4 @@
-// here we requre the figlet and run the code
+// here we require the figlet and run the code
 
 const figlet = require("figlet");
 

@@ -1,12 +1,17 @@
 //use for server side programming
 
-
+ /*
+ In above folder we require most file like this require(./fileName) but here express we directly
+ use require("express") not like this require("./express") because when we install package from 
+ npm website , express is a package installed with npm, and all npm-installed packages
+  are automatically placed in a folder called node_modules don't need to specify the path of .
+ */
 const express = require("express");
 
 //after require this express use to function call and the data come will be store in app;
 const app = express();
 
-// console.log(app); this app is object which is various thing function,variable method and so on
+// console.log(app); this app is object which has various thing like function,variable method and so on
 
 //port is logical endpoint which is use to take incoming request 3000 is custom port
 let port = 3000;
@@ -84,10 +89,10 @@ app.listen(port , ()=>{
            res.send("This is a basic string");
 
             //sending object to browser this object converted into json form
-          /*  res.send({
-                fruit :"apple",
-                color :"red"
-            }); */
+            // res.send({
+            //     fruit :"apple",
+            //     color :"red"
+            // }); 
 
             // sending html code
           /*   let code = "<h1>fruit</h1><ul><li>apple</li><li>orange</li></ul>";

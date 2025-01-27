@@ -43,8 +43,8 @@ app.get("/" , (req,res)=>{
  });
 
  //"start use to handle wrong path that not exist"
- app.get("*" , (res,req)=>{
-    req.send("this path does not exist");
+ app.get("*" , (req,res)=>{
+    res.send("this path does not exist");
  });
 
 

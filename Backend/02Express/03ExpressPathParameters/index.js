@@ -26,7 +26,7 @@ app.get("/" , (req,res) => {
   res.send("This is a root");
 });
 
-// if you want to send the multiple request you can use a varibale 
+// if you want to send the multiple request you can use a variable 
 // if you write (/:username) this username become a variable
 //  and all the data store in req variable you can see req.params ..
 
@@ -45,6 +45,7 @@ app.get("/:username/:id" , (req, res) =>{
  
     // here we send the responce to browser username and id
      let {username , id } = req.params;
+     console.log(username);
     res.send(`your username is ${username} and id ${id}`);
    //open google and send multiple request like this localhost:3000/sumit_0373/myid
 });
@@ -83,4 +84,4 @@ app.get("/search" , (req ,res) =>{
   res.send(`this is your search result => ${q}`);
 
   // how to send request form browser localhost:3000/search?q=apple
-})
+});

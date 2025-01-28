@@ -1,0 +1,38 @@
+Get & Post Requests
+=> Get        
+
+> Used to GET some response
+
+> Data sent in the form of query strings
+(limited, string data & visible in URL)
+
+we use get request when we need some data and we send data to server in the form of query string
+and this query string has some limit ...
+
+in next video we see the drawback of get string... 
+
+now we will create a index.html and create a form and learn how get request work
+
+
+
+=>Post
+
+> Used to POST something (for Createl Writel Update) (in data base mainly)
+
+> Data sent via request body (any type of data)
+
+in post request data not visible like a query string . data go waya request body see the example
+
+
+
+
+
+
+mainly
+if we want to search something form google we use get request
+if we want to upload into drive we use post request
+
+
+After this get and post request
+
+Now we will learn about the object oriented programming in javaScript..

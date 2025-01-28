@@ -1,0 +1,34 @@
+Here we learn how we can use the object oriented programming in web site 
+
+Object Oriented Programming
+To structure our code
+
+• prototypes
+• New Operator
+• constructors
+• classes
+• keywords (extends, super)..
+
+
+=> Object prototypes:
+
+Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+
+It is like a single template object that all objects inherit methods and properties from without having
+their own copy.
+
+everyobject in JavaScript have a prototype which contain all the method related to that object
+
+for example :
+if you create an array than on console page you print that array you can clearly see the 
+prototype of arrya which contain all the method like push ,pop,length and so on  ..
+In simple word array object inherit prototype for array ..
+
+Every object in JavaScript has a built-in property, which is called its prototype The prototype is
+itself an object, so the prototype will have its own prototype, making what's called a prototype
+chain. The chain ends when we reach a prototype that has null for its own prototype.
+
+
+
+Now We Talk about the factory function 
+ which is use to create an object...

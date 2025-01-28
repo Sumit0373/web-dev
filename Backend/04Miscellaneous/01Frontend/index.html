@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET and POST RequestS</title>
+</head>
+<body>
+    <h3>GET Request Form</h3>
+    <!-- Method define the request type and action define the routes-->
+    <form method="get" action="http://localhost:3000/register">
+
+        <!-- if you write <label> name </label> it show name before input box 
+         and if you write a for="myId" this myId variabe match with the id of the input box
+         when you click on the name variabe on web page the input box select automatically -->
+
+         <label for="myId">UserId</label>
+         <!--this name key use or match with server side let{userId , password} other wise show undefine-->
+         <input type="text" placeholder="Enter username" name="userId" id="myId">
+ <br>
+
+         <label for="mypassword">password</label>
+         <input type="password" placeholder="password" name="password" id="mypassword">
+   <br>      
+         <button>Submit</button>
+         <!-- You can clearly see after click on the submit button all the information 
+          will be visible in query string so it is not safe to use get request here-->
+    </form>
+
+
+
+    <h3>POST Request Form</h3>
+    <!-- Method define the request type and action define the routes-->
+    <form method="post" action="http://localhost:3000/register">
+         <input type="text" placeholder="Enter username" name="user">
+         <input type="password" placeholder="password" name="password">
+         <button>Submit</button>
+         <!-- You can clearly see after click on the submit button all the information 
+          will be hide inside request body -->
+    </form>
+    <!--Now we create a backend and handle the data -->
+
+</body>
+</html>

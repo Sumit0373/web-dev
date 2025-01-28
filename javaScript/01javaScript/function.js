@@ -59,7 +59,7 @@ console.log(countVowel("stoabc"));
 //for each loop
 let arr = ["pune","goa","delhi"];
 
-//(this return the element , this return the index) if we write only one field (elem) it can return index 
+//(this return the element , this return the index) if we write only one field (elem) it can return element
 arr.forEach((element ,index)=> {
     console.log(element , index);
 });

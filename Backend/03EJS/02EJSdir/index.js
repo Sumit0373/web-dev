@@ -62,5 +62,5 @@ app.get("/ig/:username", (req, res) => {
     //we can also pass the list of follwer for implemantaion of loop
    let followers = ["Abhiyana","Shruti" , "Tripti" ,"Adhya"];
     res.render("homeAgain.ejs" , {data,followers});
-    // we can also pall like this res.render("home.ejs" , {data});
+    // we can also pass like this res.render("home.ejs" , {data});
   });

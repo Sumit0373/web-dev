@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Edit Post</title>
+</head>
+<body>
+    <h1>Edit Your Post</h1> 
+    <p> User id : @<%= post.username %></p>
+     <p>Post id : <%= post.id %> </p>
+     <!--We can only send the get and post request from the html form we can not
+     send the patch , delete , put request form html page . 
+     
+     So we use the method-override package in npm which is use to override get or psot request 
+     into any  request weather it is a patch or  put or delete request ..... 
+
+     I use this way of overriding
+
+     override using a query value
+
+     <form method="POST" action="/resource?_method=DELETE">
+  <button type="submit">Delete resource</button>
+</form>
+     -->
+    <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+        <textarea rows="10" cols="35" name="content"><%= post.content %> </textarea>
+        <br><br>
+        <button>submit</button>
+    </form>
+</body>
+</html>

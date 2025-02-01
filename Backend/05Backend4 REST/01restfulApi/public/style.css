@@ -1,0 +1,19 @@
+h1{
+    color: rgb(171, 0, 0)
+}
+.post{
+    background-color: burlywood;
+}
+.user{
+    color: rgb(37, 8, 22);
+}
+.content {
+    color: rgb(32, 54, 179);
+}
+
+a{
+    text-decoration: none;
+}
+.post-container{
+    margin-bottom: 5rem;
+}

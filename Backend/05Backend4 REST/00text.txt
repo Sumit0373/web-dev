@@ -1,0 +1,54 @@
+REST ( Representational State Transfer)
+
+REST is an architectural style that defines a set of constraints(rule) to be used for creating web services.
+In simple word rest give a set of rule to for creating a web api ... 
+
+
+Restful api :
+restful api are those api which is use the concept of api to perform operation .. 
+
+Is use to perform the CRUD operation in databaue the help of restful api
+
+C - Create
+R - Read 
+U - Update
+D - Delete 
+
+To perform this opeation we use different type of api 
+
+After completing this restful api read more about from this website 
+( stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/ )
+
+
+
+CRUD operation perfom by the help of this http request
+
+GET : retrieves resources.
+Post : submit new data to the server 
+put : update existing data completely
+patch : update the existing data partially 
+delete  : remove the data 
+
+
+
+Now we create a web page of quora which have functionality like 
+
+ post => show username and content 
+ 
+  and we can add more functionality like 
+  view , individula , edit , delete .. 
+
+
+  and resource => here resource means post and for twitter resource is twittes and so on...
+
+
+
+Creating a Restful Apis
+
+GET      /Posts        to get data for all posts         Index (main)
+POST     /Posts        to add new post                   Create
+GET      /Posts/:id    to get one post (using id)        view
+PATCH    /PostS/:id    to update specific post           update
+DELETE   /Posts/:id    to delete specific post           Delete
+
+now we initilize the express and ejs and start server ...

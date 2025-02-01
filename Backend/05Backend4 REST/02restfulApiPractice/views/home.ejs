@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twittes</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Today's Twittes</h1>
+    <% for(twitte of twittes ) {%>
+    <div class="twitte">
+        <h3>Username : @<%= twitte.username %></h3>
+        <p>id : <%=twitte.id%></p>
+        <p class="mypost"> <%= twitte.post %></p>
+        <button> <a href="/twittes/<%= twitte.id%>/view">Open twitte</a></button> &nbsp; &nbsp;
+        <button><a href="/twittes/<%=twitte.id%>/edit">Edit twitte</a></button>
+        <br> <br><form method="post" action="/twittes/<%=twitte.id%>?_method=DELETE">
+            <button>Delete Twitte</button>
+        </form>
+    </div>
+    <%}%>
+   <button><a href="/twittes/add">Twitte Now</a></button>
+</body>
+</html>

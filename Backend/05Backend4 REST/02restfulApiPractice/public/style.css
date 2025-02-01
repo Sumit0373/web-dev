@@ -1,0 +1,18 @@
+h1{
+    color: rgb(54, 54, 198);
+    text-align: center;
+}
+.twitte{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    padding:2% ;
+    margin-bottom: 2%;
+}
+.mypost{
+    color: rgb(165, 42, 42);
+    font-size: large;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}

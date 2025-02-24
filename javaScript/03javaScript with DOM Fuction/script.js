@@ -58,6 +58,8 @@ console.log(attri.getAttribute("class")); //this give adiv attribute of the clas
 // if you want to change the vlaue of div  adiv to new_div you can do by this way
 
 attri.setAttribute("class","newDiv"); //it can change the adiv to newDiv;
+let i = document.querySelector("div");
+console.log(i.getAttribute("class"));// this can give newdiv adiv removed
 
 // style in js we can access and change the value of style
  let newD = document.querySelector(".box");

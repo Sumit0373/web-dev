@@ -38,8 +38,10 @@ console.log(document.body.childNodes[0]); //Text;
 console.log(document.body.childNodes[1]); //div
 //you can also print this div by using this method
                                        // before body is head
-
-             //this is acess html    body               div
+ 
+                                        //0 head
+                                       //1 text
+             //this is acess html     //body body              div
 console.log(document.childNodes[1].childNodes[2].childNodes[1]);//it also give div;
 
 // this give all child nodes

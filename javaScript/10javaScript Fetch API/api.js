@@ -24,7 +24,7 @@
                (Response(JSON))=>(JS Object).
           */
 
-   let URL = "https://cat-fact.herokuapp.com/facts";
+   let URLs = "https://catfact.ninja/fact";
  
 //    let promise = fetch(URL);
 //    console.log(promise); 
@@ -47,23 +47,35 @@ let data;
 
 
 
-
+//the previous api stop woring so below i creat new asyn funtion for pactice and 
+// inplement a new api 
 // when you click the button automatic data from api will we execute
 
-btn.addEventListener("click",async ()=>{
-    console.log("fetching data");
-   let response = await fetch(URL);
-   console.log(response); //JASON format
-    data= await response.json(); // it's also a asynchronous function than's why we use await
-   console.log(data); // it's give all the data 
-  console.log(data[0]); // it can give the value to data present at index 0;
-  console.log(data[0].text) // it can give the text from the data zero index;
-  
-// print data 
- fact.innerText = (data[0].text);
-   });
+// btn.addEventListener("click",async ()=>{
+//     console.log("fetching data");
+//    let response = await fetch(URL);
+//    console.log(response); //JASON format
+//     data= await response.json(); // it's also a asynchronous function than's why we use await
+//    console.log(data); // it's give all the data 
+//   console.log(data[0]); // it can give the value to data present at index 0;
+//   console.log(data[0].text) // it can give the text from the data zero index;
+// // print data 
+//  fact.innerText = (data[0].text);
+//    });
 
-  
+
+
+//implemnting a new async fuction
+ let i=0;
+  btn.addEventListener("click",async ()=>{
+    console.log("fetching the data");
+    let response = await fetch(URLs); 
+    console.log(response); //printing the responce 
+     let newresponse = await response.json(); // parsing the json data into json object
+     console.log(newresponse); // loging
+     let fact1 = newresponse.fact;
+     fact.innerText = fact.innerText +`\n\n ${++i} : `+ fact1;
+  })
 
 
 

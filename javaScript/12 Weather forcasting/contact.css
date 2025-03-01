@@ -112,9 +112,9 @@ height: 2.2rem;
     border-bottom: 1px solid #070404;
   }
 
-  .accordion-item:last-child {
+  /* .accordion-item:last-child {
     border-bottom: none;
-  }
+  } */
 
   .accordion-header {
     background-color: #ffffff;

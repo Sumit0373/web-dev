@@ -1,0 +1,170 @@
+Where Clause
+
+To define some conditions
+SELECT col1, col2 FROM table_name
+WHERE conditions;
+ 
+ Where is use to add some conditions 
+
+
+
+Operator in Where Clause....
+
+Where Clause
+
+Operators
+
+Arithmetic  : +(addition) , -(subtraction), * (multiplication), /(division), %(modulus).
+Comparison Operators : = (equal to), != (not equal to), >= , <, <=.
+Logical Operators : AND, OR , NOT, IN, BETWEEN, ALL, LIKE, ANY.
+Bitwise Operators : & (Bitwise AND), I (Bitwise OR).
+
+
+
+
+Where Clause
+Frequently used Operators
+AND (to check for both conditions to be true)
+OR (to check for one of the conditions to be true)
+BETWEEN (selects for a given range)
+IN (matches any value in the list)
+NOT (to negate the given condition)
+
+
+Limit Clause
+Sets an upper limit on number of (tuples) rows to be returned
+
+SELECT col1, col2 FROM table_name
+LIMIT number;
+
+
+Order by Clause
+To sort in ascending (ASC) or descending order (DESC)
+
+SELECT col1 , col2 FROM table_name
+ORDER BY col_name(s) ASC;
+
+
+
+
+Aggregate Functions
+
+Aggregate functions perform a calculation on a set of values, and return a single value.
+• COUNT()
+• MAX()
+• MIN()
+• SUM()
+• AVG()
+
+Example :
+SELECT max(marks)
+FROM student;
+
+
+Group by Clause
+Groups rows that have the same values into summary rows.
+It collects data from multiple records and groups the result by one or more column.
+
+SELECT col1, col2
+FROM table_name
+ GROUP BY col_name(s);
+
+*Generally we use group by with some aggregation function.
+
+SELECT age From student GROUP BY age;
+// here we group by age so we can only write a age after select if we write any thing like name , mark it will give me an error 
+
+
+
+
+
+
+Having Clause
+
+Similar to Where i.e. applies some condition on rows.
+But it is used when we want to apply any condition after grouping.
+
+SELECT col1, col2
+FROM table_name
+GROUP BY
+HAVING condition;
+
+• WHERE is for the table, HAVING is for a group
+• Grouping is necessary for HAVING
+
+
+
+
+
+
+General Order
+
+SELECT column(s)
+
+FROM table_ name
+
+WHERE condition
+
+GROUP BY column(s)
+
+HAVING condition
+
+ORDER BY column(s) ASC;
+
+
+
+
+Table Queries
+Update (to update existing rows)
+
+UPDATE table _ name 
+SET col1 = vall, col2 =va12
+WHERE condition;
+
+-- we can not directly update the data base we have to off the safe mode
+SET SQL_SAFE_UPDATES = 0; -- THIS CAN alow the modification in the data base 
+
+
+
+Table Queries
+Delete (to delete existing rows)
+
+DELETE FROM table_ name
+WHERE condition;
+
+
+
+
+Table Queries
+Alter (to change the schema)
+
+ADD Column
+ALTER TABLE table _ name
+ADD COLUMN column _ name datatype constraint;
+
+
+DROP Column
+ALTER TABLE table _ name
+DROP COLUMN column _ name;
+
+ RENAME Table
+ALTER TABLE table _ name
+RENAME TO new _ table _ name;
+
+
+CHANGE Column (rename)
+ALTER TABLE table _ name
+CHANGE COLUMN old _ name  new_name  new _ datatype  new _ constraint;
+
+
+MODIFY Column (modify datatype/ constraint)
+ALTER TABLE table _ name
+MODIFY col_ name new_ datatype new_ constraint;
+
+
+
+
+Table Queries
+Truncate (to delete table's data)
+
+TRUNCATE TABLE table_ name ;

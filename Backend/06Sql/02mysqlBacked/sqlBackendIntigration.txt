@@ -1,0 +1,24 @@
+We install Facker from npm website.
+
+it is basically use to generate the fake data inside the database 
+like username , userid , email , password..
+ 
+ to install process we can go to the npm website and install 
+ create a index.js and requite the facker and generate fake data...
+
+
+
+
+.                                      MySQL2  Package
+
+. This is use to connect the Node with MySQL
+. connection.end(); // to close the connection
+
+When ever client made a request it can go to the server and server made the request to the data 
+base and database return the response to the server and server send the response to the client.
+
+
+
+
+To Install we can go to the npm website and install mysql2 to make connection
+and go to first qurery see how to use ...

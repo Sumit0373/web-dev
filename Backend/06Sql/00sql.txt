@@ -1,0 +1,148 @@
+SQL 
+sql is a Structured query language it is language which is use to intract with database...
+
+What is a Database?
+
+It is a collection of data in a format that can be easily accessed.
+
+Why databases?
+can store large data
+features like security, scalability etc.
+Easier to insert, update or delete or search data.
+
+database management systme is used to perform operation on the database ...
+
+
+SQL v/s NoSQL
+
+SQL                                                   NoSQL
+
+Relational Database                               Non Relational Database
+
+(data stored in Tables)                           (data stored in documentlkey-vallgraphs etc.)
+
+eg - MySQL, Oracle,                                eg - MongoDb, Cassandra,
+PostgreSQL etc.                                          Ne04j etc.
+         
+
+
+Columns tell => design of table (schema).
+[id, name , email , rollnumber].
+
+row tell => data of user (tuple).
+
+
+
+To create a data base 
+
+Our 1st Database
+CREATE DATABASE db_name;
+DROP DATABASE db_name;
+USE
+db_ name;
+
+
+to create a table 
+
+Our 1st Table
+CREATE TABLE table_name (
+column _ namel datatype constraint,
+column_name2 datatype constraint,
+column_name2 datatype constraint
+);
+
+
+
+
+Database Queries
+
+CREATE DATABASE db_name;
+CREATE DATABASE IF NOT EXISTS db_name;
+DROP DATABASE db_name;
+DROP DATABASE IF EXISTS db_ name;
+SHOW DATABASES;
+SHOW TABLES,
+
+
+
+Table Queries
+• Create
+• Insert
+• Update
+• Alter
+• Truncate
+• Delete
+
+Table Queries
+
+Create
+TABLE table _ name (
+column _ namel datatype constraint,
+column_name2 datatype constraint
+);
+
+Constraints
+Rules for data in the table
+
+1. NOT NULL  columns cannot have a null value
+2. UNIQUE    all values in column are different
+3. DEFAULT   sets the default value of a column
+4. CHECK     it can limit the values allowed in a column
+
+salary INT DEFAULT 25000
+
+age INT check (age >= 10); check constraint
+
+Constraints
+PRIMARY KEY
+FOREIGN KEY
+
+PRIMARY KEY:
+makes a column unique & not null but used only for one
+
+CREATE TABLE tem(
+    id INT NOT NULL,
+    PRIMARY KEY (id);
+);
+
+FOREIGN KEY :
+prevent actions that would destroy links between tables
+CREATE TABLE temp(
+    cust_id INT,
+    FOREIGN KEY (cust_id) REFERENCES customer (id)
+);
+
+
+
+
+What is key 
+
+Key are the special column in the table
+
+Primary Key
+It is a column (or set of columns) in a table that uniquely identifies each row. (a unique id)
+There is only 1 PK & it should be NOT null.
+
+
+FOREIGN KEY
+A foreign key is a column (or set of columns) in a table that refers to the primary key in another
+table
+
+foreign key can have duplicate and null vlaues 
+there can be multiple fks
+
+
+
+
+Select Command
+Selects & Show data from the DB
+
+Syntax
+SELECT coll, col2 FROM table _ name;
+
+Syntax (to show all)
+SELECT * FROM table_name;
+
+this is use to show the unique data form a table
+
+SELECT DISTINCT age FROM user;

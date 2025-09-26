@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Welcome to the Student Recode</h1>
+    <table border ="1">
+        <tr>
+            <th>Name</th>
+            <th>Content</th>
+            <th>ID</th>
+            <th>edit</th>
+        </tr>
+             <% for(student of studentData) {%>
+                   <tr>
+                <td><%= student.name %></td>
+                <td> <%=student.content %></td>
+                  <td>  <%= student.id%> </td>
+                 <td><a href="http://localhost:3000/<%= student.id%>/edit">Edit</a></td>
+                                                <!-- student.id is a number than it's okay but if it is a string than it is an issue beceause string always be in single coat thats why we put single coat -->
+                 <td><a href="#" onclick="deleteStudent('<%=student.id%>')">Delete</a></td>
+                  <%}%>
+        </tr>
+    </table>
+    <hr>
+    <form method="get" action="http://localhost:3000/add">
+        <button>Join Now</button>
+    </form>
+    <script>
+        function deleteStudent(id){
+            if(confirm("Are You Really Want to delete")){
+                fetch(`/${id}`,{method : "DELETE"})
+                .then(res =>{
+                    if(res.ok) location.reload();
+                    else alert("Erro in deleting the data");
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+

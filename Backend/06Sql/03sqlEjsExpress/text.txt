@@ -1,0 +1,6 @@
+IN THIS I WAS CREATED A  STUDENT RECODE
+
+at localhost:3000 you can get the all studet record and 
+and join use add new student 
+and edit use to update the data 
+and delete is use to delete .
